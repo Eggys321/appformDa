@@ -47,7 +47,7 @@ const Create = () => {
           <input
             className="input-p ps-3"
             type="password"
-            placeholder="******"
+            // placeholder="******"
             onChange={(e) => {
               setErrorMessage({ ...errorMessage, password: "" });
               setUserDetails({ ...userDetails, password: e.target.value });

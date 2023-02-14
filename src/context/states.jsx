@@ -93,43 +93,43 @@ export const StateProvider = ({ children }) => {
 
   // Form Handling
   const handlePageMoveForward = () => {
-    // setPageIndex(pageIndex + 1);
+    setPageIndex(pageIndex + 1);
     console.log(pageIndex);
 
-    if (pageIndex == 2) {
-      return;
-    } else {
-      if (
-        userDetails.fullName == "" ||
-        userDetails.email == "" ||
-        userDetails.password == ""
-      ) {
-        if (userDetails.fullName == "") {
-          setErrorMessage({
-            ...errorMessage,
-            fullName: "Enter your name",
-          });
-        } else if (userDetails.email == "") {
-          setErrorMessage({
-            ...errorMessage,
-            email: "Enter your email",
-          });
-        } else if (userDetails.password == "") {
-          setErrorMessage({
-            ...errorMessage,
-            password: "Enter your password",
-          });
-        }
-      } else {
-        // console.log(pageIndex);
-        console.log(userDetails);
-        if (data == null) {
-          handleRegister(userDetails);
-        } else {
-          setPageIndex(pageIndex + 1);
-        }
-      }
-    }
+    // if (pageIndex == 2) {
+    //   return;
+    // } else {
+    //   if (
+    //     userDetails.fullName == "" ||
+    //     userDetails.email == "" ||
+    //     userDetails.password == ""
+    //   ) {
+    //     if (userDetails.fullName == "") {
+    //       setErrorMessage({
+    //         ...errorMessage,
+    //         fullName: "Enter your name",
+    //       });
+    //     } else if (userDetails.email == "") {
+    //       setErrorMessage({
+    //         ...errorMessage,
+    //         email: "Enter your email",
+    //       });
+    //     } else if (userDetails.password == "") {
+    //       setErrorMessage({
+    //         ...errorMessage,
+    //         password: "Enter your password",
+    //       });
+    //     }
+    //   } else {
+    //     // console.log(pageIndex);
+    //     console.log(userDetails);
+    //     if (data == null) {
+    //       handleRegister(userDetails);
+    //     } else {
+    //       setPageIndex(pageIndex + 1);
+    //     }
+    //   }
+    // }
   };
 
   const handlePageMoveBackword = () => {
